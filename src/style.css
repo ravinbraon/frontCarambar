@@ -9,13 +9,14 @@
 }
 
 .titleMarque {
-    padding-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgb(227,10,127);
 }
 
 .fontFamilyTitle{
-   font-family: "Oswald", sans-serif;
-   font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
 }
 
 .fontFamily {
@@ -30,20 +31,18 @@
 
 .title {
     color: white;
+    list-style-type: none;
 }
 
 .colorBlack {
     color: black;
 }
+
 .borderStyle {
     border-style: solid;
     border-radius: 15px;
-    border-width: 3px !important;
-    border-color: rgb(227,10,127) !important;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 10px;
-
+    border-width: 3px;
+    border-color: rgb(227,10,127);
 }
 
 .imgEffet {
@@ -56,6 +55,7 @@
 
 .backgroundPink {
     background-color: rgb(227,10,127);
+    margin-top: 25px;
 }
 
 .styleBtn {
@@ -64,8 +64,10 @@
     border-radius: 10px;
     background-color: rgb(255,220,38);
     padding: 5px 25px;
+    font-family: "Oswald", sans-serif;
     margin-bottom: 20px;
 }
+
 
 .backgroundBlue {
     background-color: rgb(4,21,59);
@@ -76,41 +78,51 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.titleMarqueFooter{
+.titleMarqueFooter {
     font-family: "Oswald", sans-serif;
     font-size: 25px;
-    gap: 30px;
-}
-
-.fontFamily {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-}
-
-.paddingBottom {
+    gap: 20px;
     padding-bottom: 20px;
+    list-style-type: none;
 }
 
-.designUrl {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-.designNavFooter {
-    text-decoration: none;
-    color: white;
-}
-
+.designUrl,
+.designNavFooter,
 .designUrlBottom {
     text-decoration: none;
+    color: white;
+}
+
+.textFooter {
     color: black;
 }
 
 .designUrl:hover,
 .designNavFooter:hover,
-.designUrlBottom:hover {
+.designUrlBottom:hover,
+.textFooter:hover {
     color: rgb(227,10,127);
+}
+
+@media (max-width: 768px) {
+    .fontFamilyTitle {
+        font-size: 30px;
+    }
+
+    .fontFamily {
+        font-size: 22px;
+        color: black;
+    }
+
+    .titleMarque {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .titleMarqueFooter {
+        gap: 30px;
+    }
 }
