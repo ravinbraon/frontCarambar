@@ -88,3 +88,29 @@
     font-family: "Oswald", sans-serif;
     font-size: 20px;
 }
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.designUrl {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.designNavFooter {
+    text-decoration: none;
+    color: white;
+}
+
+.designUrlBottom {
+    text-decoration: none;
+    color: black;
+}
+
+.designUrl:hover,
+.designNavFooter:hover,
+.designUrlBottom:hover {
+    color: rgb(227,10,127);
+}
