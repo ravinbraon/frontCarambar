@@ -125,4 +125,12 @@
     .titleMarqueFooter {
         gap: 30px;
     }
+
+    .textFooter {
+        font-size: 15px;
+    }
+
+    .designUrl {
+        font-size: 15px;
+    }
 }
