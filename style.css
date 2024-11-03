@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.sizeImage {
+    height : 60px;
+    width : 286px;
+}
+
+
 .titleMarque {
     padding-left: 10px;
     padding-right: 10px;
@@ -107,7 +113,23 @@
     color: rgb(227,10,127);
 }
 
+@keyframes zoomIn {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.zoom {
+    animation: zoomIn 0.5s ease;
+}
+
 @media (max-width: 768px) {
+
+    .sizeImage {
+        height: auto;
+        width: 150;
+    }
+
     .fontFamilyTitle {
         font-size: 30px;
     }
@@ -127,10 +149,10 @@
     }
 
     .textFooter {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .designUrl {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
